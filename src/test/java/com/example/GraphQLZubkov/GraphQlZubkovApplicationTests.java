@@ -18,7 +18,8 @@ class GraphQlZubkovApplicationTests {
 
 	@Test
 	void addNewCar(){
-		Car car = new Car(2l, "BMW", "M4", "28-02-2003");
+		Car car = new Car( "BMW", "M4", "28-02-2003");
+//		Car car = new Car(2l, "Mercedes", "E63s", "28-02-2003");
 		carRepository.saveAndFlush(car);
 	}
 
